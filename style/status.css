@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #151F30, #103778);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    gap: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    font-weight: 600;
+    padding: 10% 10%;
+}
+.principal {
+    max-width: 900px;
+    width: 60%;
+    background-color: transparent;
+    border: 0.03125em solid rgba(255,255,255,.2);
+    border-radius: 1.25em;
+    color: white;
+    padding: 1% 5% 3% 2%;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    backdrop-filter: blur(500px);
+    font-size: clamp(0.3rem, 1.4vw, 2rem);
+}
+.principal h1 {
+    font-size: clamp(0.5rem, 4vw, 2.25rem);
+    text-align: center;
+    padding: 5% 0% 0% 5%;
+}
+.p1 {
+    font-size: clamp(0.5rem, 3vw, 1.5rem);
+    text-align: center;
+    padding: 0% 5%;
+}
+
+.status {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+    height: 80%;
+    padding: 2% 5% 2% 5%;
+    margin: 5% 5%;
+}
+
+
+
+.imag {
+    position: absolute; 
+    top: 5%; 
+    right: 10%; 
+    width: 10%; 
+    height: auto; 
+}
+.nav2 {
+    position: absolute; 
+    top: 6%;
+    left: 10%;
+    height: 5%; 
+}
+.cabecalho a{
+    color: white;
+    text-decoration: none;
+    font-size: clamp(0.3rem, 1.5vw, 1.25rem);;
+
+}
+.cabecalho a:hover {
+    text-decoration: underline;
+}
+.nav2 {
+    display: flex;
+    gap: 50px;
+}
+/* Estilo padrão para o círculo (cinza) */
+.circulo {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(194, 188, 188); /* Cor cinza */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    position: relative;
+    margin-right: 20px; /* Espaço entre o círculo e o texto */
+    flex-shrink: 0; /* Impede que o círculo diminua de tamanho */
+}
+
+/* Estilo para o círculo verde */
+.circulo.verde {
+    background-color: green; /* Cor verde */
+}
+
+/* Linha padrão (cinza) */
+.circulo::before {
+    content: "";
+    width: 5px;
+    height: 200px;
+    background-color: rgb(194, 188, 188); /* Cor cinza */
+    position: absolute;
+    top: 100%; /* Coloca a linha abaixo do círculo */
+    left: 50%; /* Centraliza a linha horizontalmente */
+    transform: translateX(-50%); /* Ajusta a centralização */
+}
+
+/* Linha verde */
+.circulo.verde::before {
+    background-color: green; /* Cor verde */
+}
+
+/* Remove a linha do último item */
+.status:last-child .circulo::before {
+    display: none;
+}

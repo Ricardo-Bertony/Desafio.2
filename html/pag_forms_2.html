@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../RECURSOS/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../style/forms_2.css">
+    <title>formulario de Incrição</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div>
+            <img src="../figuras/LOGO_GOV_MA_2023_MAIOR.png" alt="gov" class="imag">
+        </div>
+        <nav class="navegacao">
+            <div>
+                <a href="#">Home</a>
+            </div>
+            <div>
+                <a href="#">Info</a>
+            </div>
+        </nav>
+    </header>
+    <main class="principal">
+        <h1>FORMULÁRIO DE INSCRIÇÃO PARA O PROGRAMA TRILHAS</h1>
+        <div class="box_form"> 
+            <div>
+                <labsel for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                <i class="bx bxs-user"></i>
+            </div>
+    
+            <!-- Data de Nascimento -->
+            <div>
+                <label for="data_nascimento">Data de Nascimento</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" required class="caled">
+            </div>
+    
+            <!-- Sexo -->
+            <div>
+                <label for="sexo">Selecione o sexo</label>
+                <input list="opcoes" id="sexo" name="sexo" placeholder="selecione..." required>
+                <datalist id="opcoes">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </datalist>
+                <i class="bx bxs-chevron-down"></i> <!-- Ícone adicional para combinar com o datalist -->
+            </div>
+    
+            <!-- E-mail -->
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
+                <i class="bx bxs-envelope"></i>
+            </div>
+    
+            <!-- Telefone -->
+            <div>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required pattern="\(\d{2}\) \d{5}-\d{4}">
+                <i class="bx bxs-phone"></i>
+            </div>
+            <div>
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Ex: Av. Portugueses, 123 - Centro, 65000-000"  required>
+                <i class="bx bxs-map"></i>
+            </div>
+        </div>
+            <h2>Trilhas de Aprendizagem Selecione apenas uma opção:</h2>
+        <div class="box_optin">
+            <div class="icons"> 
+                <input type="radio" name="opcao" id="op1" value="op1">
+                <i class="fas fa-laptop-code"></i>
+                <label for="op1">Programação Back-end</label>
+            </div>
+            <div class="icons">
+                <input type="radio" name="opcao" id="op2" value="op2">
+                <i class="fas fa-code"></i> 
+                <label for="op2">Programação Front-end</label>
+            </div>
+        </div>
+        <div class="box_optin">
+            <div class="icons">
+                <input type="radio" name="opcao" id="op3" value="op3">
+                <i class="fas fa-paint-brush"></i>
+                <label for="op3">Design e Experiência</label>
+            </div>
+            <div class="icons">
+                <input type="radio" name="opcao" id="op4" value="op4">
+                <i class="fas fa-database"></i>
+                <label for="op4">Ciência de Dados</label>
+            </div>
+        </div>
+        <div class="box_optin">
+            <div class="icons">
+                <input type="radio" name="opcao" id="op5" value="op5">
+                <i class="fas fa-gamepad"></i>
+                <label for="op5">Programação de Jogos</label>
+            </div>
+        </div>
+        <div class="termos">
+            <label>
+                <input type="checkbox">
+                Li e concordo com os <a href="#">termos e condições</a> e com a <a href="#">política de privacidade</a>
+            </label>
+        </div>
+        <div>
+            <a href="pag_mens_trilhas.html"><button type="button" class="login">Enviar Inscrição</button></a>
+        </div>
+    </main>
+
+</body>
+</html>

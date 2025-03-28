@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="shortcut icon" href="RECURSOS/favicon.png" type="image/png">
+    <title>Plataforma Trilhas</title>
+</head>
+<body>
+    <header class="cabecalho" id="cabecalho">
+        <div id="logo-container">
+            <img src="figuras/LOGO_GOV_MA_2023_MAIOR.png" alt="gov" class="imag" id="logo-gov">
+        </div>
+        <nav class="nav2" id="navegacao-principal">
+            <div id="home-link">
+                <a href="#">Home</a>
+            </div>
+            <div id="info-link">
+                <a href="#">Info</a>
+            </div>
+        </nav>
+    </header>
+    <img src="figuras/logo-trilhas-inova.png" alt="trilhas" class="trilhas" id="logo-trilhas">
+    <main class="Container" id="conteudo-principal">
+        <form class="aparencia_formulario" id="formulario-login">
+            <h1 id="titulo-login">Login</h1>
+            <div class="input_box" id="cpf-container">
+                <input placeholder="Seu CPF" type="number" id="campo-cpf" 
+                       pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                       title="Digite um CPF no formato: 000.000.000-00"
+                       required>
+                <i class="bx bxs-user" id="icone-usuario"></i>
+            </div>
+            <div class="input_box" id="senha-container">
+                <input placeholder="Sua Senha" type="password" id="campo-senha" required>
+                <i class="bx bxs-lock-alt" id="icone-senha"></i>
+            </div>
+            <div class="lembrar_senha" id="opcoes-login">
+                <label id="label-lembrar">
+                    <input type="checkbox" id="checkbox-lembrar">
+                    Lembrar Senha
+                </label>
+                <a href="#" id="link-esqueci-senha">Esqueci senha</a>
+            </div>
+            <a href="html/pag_forms_2.html">
+                <button type="button" class="login" id="botao-entrar">Entrar</button>
+            </a>
+            <div class="registrar" id="registrar-container">
+                <p id="texto-registro">Não tem uma conta? <a href="html/pag_registe.html" id="link-registro">Registra-se</a></p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

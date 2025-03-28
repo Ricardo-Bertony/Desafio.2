@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/register.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Cadastro</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div>
+            <img src="../figuras/LOGO_GOV_MA_2023_MAIOR.png" alt="gov" class="imag">
+        </div>
+        <nav class="nav2">
+            <div>
+                <a href="#">Home</a>
+            </div>
+            <div>
+                <a href="#">Info</a>
+            </div>
+        </nav>
+    </header>
+    <main class="principal">
+        <form id="formulario-registro">
+            <h1 id="titulo-formulario">Digite seus dados para se cadastrar</h1>
+            <div class="box_form">
+                <P>Informe seu nome completo</P>
+                <input placeholder="Nome" type="text" id="campo-nome" required>
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="box_form">
+                <P>Informe seu E-mail</P>
+                <input placeholder="exemplo@dominio.com" type="email" id="campo-email" required>
+                <i class="bx bxs-envelope"></i>
+            </div>
+            <div class="box_form">
+                <p>Informe seu telefone</p>
+                <input placeholder="(00) 00000-0000" type="number" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" id="campo-telefone" required>
+                <i class="bx bxs-phone"></i>
+            </div>
+            <div class="box_form">
+                <p>Informe sua senha</p>
+                <input placeholder="Senha" type="password" 
+                       minlength="8"
+                       id="campo-senha" required>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div class="termos" id="termos-aceite">
+                <label>
+                    <input type="checkbox" id="checkbox-termos" required>
+                    Li e concordo com os <a href="#" id="link-termos">termos e condições</a> e com a <a href="#" id="link-privacidade">política de privacidade</a>
+                </label>
+            </div>
+            <div>
+                <a href="../html/pag_messagem.html">
+                    <button type="button" class="login" id="botao-registro">Registrar-se</button>
+                </a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
+
