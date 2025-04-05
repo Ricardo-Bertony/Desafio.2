@@ -15,83 +15,43 @@ body {
     background-size: cover;
     background-position: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 2em;
     font-family: "Poppins", sans-serif;
     font-size: clamp(0.5rem, 2vw, 1rem);
     font-weight: 600;
     padding: 10% 10%;
 }
 .principal {
-    max-width: 1000px;
     width: 50%;
     background-color: transparent;
     border: 0.03125em solid rgba(255,255,255,.2);
     border-radius: 1.25em;
     color: white;
-    padding: 0% 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     box-shadow: 0 0 10px rgba(0,0,0,.2);
     backdrop-filter: blur(500px);
-    font-size: clamp(0.3rem, 1.4vw, 2rem);
+    font-size: clamp(0.3rem, 1.4vw, 2.25rem);
 }
-.principal h1 {
-    font-size: clamp(0.5rem, 4vw, 2.25rem);
-    text-align: center;
-    padding: 5% 5%;
-}
-.box_form {
-    position: relative;
-    width: 100%;
-    max-height: 300px;
-    height: 80%;
-    margin: 5% 5%;
-}
-.box_form input {
-    width: 90%;
-    max-height: 25px;
-    height: 50%;
-    background-color: transparent;
-    border: 0.03125em solid rgba(255,255,255,.2);
-    border-radius: 1em;
-    outline: none;
-    font-size: clamp(0.3rem, 2vw, 1.5rem);
-    color: white;
-    padding: 5% 10% 5% 5%;
-}
-.box_form input::placeholder {
-    color: #3D5B81
-}
-.box_form i {
-    position: absolute;
-    right: 12.5%;
-    top: 55%;
-    transform: translateY(-0%);
-}
-.termos {
-    width: 100%;
-    margin: 5% 10% 0% 10%;
-    font-size: clamp(0.3rem, 1.0vw, 1.0rem);
-    color: white;
-}
-.termos a {
-    color: #9BC0D9;
-    text-decoration: none;
-}
-.login {
-    width: 80%;
-    height: 90%;
+.voltar {
+    width: 50%;
+    height: 2.5em;
     background-color: white;
     border: none;
     border-radius: 0.625em;
     cursor: pointer;
-    font-size: clamp(0.3rem, 2vw, 1.3rem);
+    font-size: clamp(0.3rem, 1vw, 1.3rem);
     color: rgb(0, 0, 0);
     font-weight: 600;
-    padding: 1em;
-    margin: 5% 10% 10% 10%;
+    margin-left: 25%;
+    margin-right: 20%;
+    margin-top: 5%;
     align-items: center;
 }
 
-.login:hover {
+.voltar:hover {
     text-decoration: underline;
     background-color: rgb(193, 186, 186);
 }
@@ -122,4 +82,50 @@ body {
 .nav2 {
     display: flex;
     gap: 50px;
+}
+.mesg {
+    padding: 5% 5% 0% 5%;
+    text-align: justify;
+}
+strong {
+    color: #9BC0D9;
+}
+
+@media (max-width: 900px) {
+    body {
+        font-size: clamp(0.6rem, 3vw, 1rem); /* Ajusta base para melhor legibilidade */
+        padding: 15% 5%; /* Reduz padding lateral */
+        gap: 1.5em; /* Espaçamento menor entre elementos */
+    }
+
+    .principal {
+        width: 90%; /* Ocupa mais espaço na tela */
+        font-size: clamp(0.5rem, 2vw, 1.5rem); /* Reduz tamanho do texto */
+        padding: 8%; /* Ajusta padding interno */
+    }
+
+    .voltar {
+        width: 70%; /* Botão mais largo */
+        margin: 8% 15% 0 15%; /* Centraliza melhor */
+        font-size: clamp(0.4rem, 1.5vw, 1.1rem); /* Ajusta texto do botão */
+    }
+
+    .imag {
+        width: 15%; /* Logo um pouco maior */
+        right: 5%; /* Posição mais ajustada */
+    }
+
+    .nav2 {
+        left: 5%; /* Ajusta posição */
+        gap: 20px; /* Reduz espaçamento entre links */
+    }
+
+    .cabecalho a {
+        font-size: clamp(0.4rem, 2vw, 1rem); /* Links menores */
+    }
+
+    .mesg {
+        padding: 8% 5% 0% 5%; /* Mais espaço acima do texto */
+        font-size: clamp(0.4rem, 1.8vw, 1rem); /* Ajuste de legibilidade */
+    }
 }

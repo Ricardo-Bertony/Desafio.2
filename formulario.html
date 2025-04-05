@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="../RECURSOS/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../style/forms_2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/formulario.css">
     <title>formulario de Incrição</title>
+    <script src="javascript/script.js" defer></script>
 </head>
 <body>
     <header class="cabecalho">
         <div>
-            <img src="../figuras/LOGO_GOV_MA_2023_MAIOR.png" alt="gov" class="imag">
+            <img src="Img/LOGO_GOV_MA_2023_MAIOR.png" alt="gov" class="imag">
         </div>
         <nav class="navegacao">
             <div>
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
             </div>
             <div>
-                <a href="#">Info</a>
+                <a href="https://www.inova.ma.gov.br/" target="_blank">Info</a>
             </div>
         </nav>
     </header>
@@ -29,7 +29,6 @@
             <div>
                 <labsel for="nome">Nome Completo</label>
                 <input type="text" id="nome" name="nome" placeholder="Nome" required>
-                <i class="bx bxs-user"></i>
             </div>
     
             <!-- Data de Nascimento -->
@@ -43,29 +42,25 @@
                 <label for="sexo">Selecione o sexo</label>
                 <input list="opcoes" id="sexo" name="sexo" placeholder="selecione..." required>
                 <datalist id="opcoes">
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
                 </datalist>
-                <i class="bx bxs-chevron-down"></i> <!-- Ícone adicional para combinar com o datalist -->
             </div>
     
             <!-- E-mail -->
             <div>
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
-                <i class="bx bxs-envelope"></i>
             </div>
     
             <!-- Telefone -->
             <div>
                 <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required pattern="\(\d{2}\) \d{5}-\d{4}">
-                <i class="bx bxs-phone"></i>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
             </div>
             <div>
-                <label for="endereco">Endereço</label>
+                <label for="Endereco">Endereço</label>
                 <input type="text" id="endereco" name="endereco" placeholder="Ex: Av. Portugueses, 123 - Centro, 65000-000"  required>
-                <i class="bx bxs-map"></i>
             </div>
         </div>
             <h2>Trilhas de Aprendizagem Selecione apenas uma opção:</h2>
@@ -107,7 +102,9 @@
             </label>
         </div>
         <div>
-            <a href="pag_mens_trilhas.html"><button type="button" class="login">Enviar Inscrição</button></a>
+            <a href="#">
+                <button type="button" class="login">Enviar Inscrição</button>
+            </a>
         </div>
     </main>
 

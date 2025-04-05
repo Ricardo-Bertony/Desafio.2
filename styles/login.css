@@ -15,11 +15,14 @@ body {
     background-size: cover;
     background-position: center;
     flex-direction: column;
-    gap: 1.87em;
+    gap: 4em;
     font-family: "Poppins", sans-serif;
     font-size: clamp(0.5rem, 2vw, 1rem);
     font-weight: 600;
-    padding: 0% 0% 0% 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .Container {
     max-width: 500px;
@@ -42,7 +45,7 @@ body {
 .input_box {
     position: relative;
     width: 100%;
-    max-height: 50px;
+    max-height: 10em;
     height: 50%;
     margin: 8% 0;
 }
@@ -66,7 +69,7 @@ body {
 .input_box i {
     position: absolute;
     right: 2em;
-    top: 55%;
+    top: 40%;
     transform: translateY(-0%);
 }
 
@@ -162,4 +165,71 @@ body {
     display: flex;
     gap: 50px;
 }
+/* ... (mantenha todo o CSS anterior) ... */
 
+/* Media Query para telas menores que 900px - Versão ajustada */
+@media (max-width: 900px) {
+    body {
+        gap: 5em;  /* Reduzido de 2em */
+        padding: 12% 5%;  /* Ajuste fino */
+    }
+
+    .Container {
+        width: 90%;
+        padding: 5% 5%;  /* Reduzido de 10% */
+    }
+
+    .Container h1 {
+        font-size: clamp(1.3rem, 6vw, 1.8rem);  /* Ajuste fino */
+        margin-bottom: 12%;  /* Reduzido de 15% */
+    }
+
+    .input_box {
+        height: 8em;  /* Reduzido de 45px */
+        margin: 0% 0;  /* Reduzido de 12% */
+    }
+
+    .input_box input {
+        font-size: clamp(0.9rem, 3vw, 1.2rem);
+        padding: 0 12% 0 6%;  /* Ajuste fino */
+        border-radius: 1em;  /* Mantido igual ao desktop */
+        border: 0.03125em solid rgba(255,255,255,.2);  /* Mantido */
+    }
+
+    /* Ajuste fino no espaçamento vertical */
+    .lembrar_senha {
+        font-size: clamp(0.8rem, 2.8vw, 0.95rem);
+        margin: 0% 0;  /* Reduzido de 8% */
+    }
+
+    .login {
+        height: 4em;  /* Reduzido de 45px */
+        font-size: clamp(0.9rem, 3vw, 1.1rem);
+        margin-top: 3%;  /* Reduzido de 8% */
+        border-radius: 0.625em;  /* Mantido igual */
+    }
+
+    /* Ícone posicionado corretamente */
+    .input_box i {
+        right: 6%;  /* Ajuste fino */
+        font-size: clamp(0.9rem, 2.8vw, 1.1rem);
+    }
+
+    .trilhas {
+        width: 90%;
+    }
+
+    .imag {
+        width: 15%;
+        right: 5%;
+    }
+
+    .nav2 {
+        left: 5%;
+        gap: 20px;
+    }
+
+    .cabecalho a {
+        font-size: clamp(0.8rem, 2.5vw, 1rem);
+    }
+}
