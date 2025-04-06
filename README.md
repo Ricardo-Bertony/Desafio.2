@@ -66,6 +66,6 @@ JavaScript
 
 Boxicons e Font Awesome para ícones
 
-<a href="https://ricardo-bertony.github.io/Desafio.3/formulario.html">Clique aqui para Acessar o projeto</a>
+<a href="https://ricardo-bertony.github.io/Desafio.3/formulario.html" target = "blank">Clique aqui para Acessar o projeto</a>
 
  
