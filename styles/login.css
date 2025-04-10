@@ -73,6 +73,15 @@ body {
     transform: translateY(-0%);
 }
 
+.mensagem1 {
+    color: red;
+    font-size: 1rem;
+    display: none;
+    margin-top: -4%;
+    margin-bottom: 4%;
+    margin-left: 2%;
+}
+
 .lembrar_senha {
     display: flex;
     justify-content: space-between;

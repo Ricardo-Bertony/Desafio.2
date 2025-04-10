@@ -37,20 +37,22 @@
                 <input placeholder="Sua Senha" type="password" id="campo-senha" required>
                 <i class="bx bxs-lock-alt" id="icone-senha"></i>
             </div>
+            <p class="mensagem1" >Usuario ou senha incorreta</p>
             <div class="lembrar_senha" id="opcoes-login">
                 <label id="label-lembrar">
-                    <input type="checkbox" id="checkbox-lembrar">
+                    <input type="checkbox" id="checkbox-lembrar" required>
                     Lembrar Senha
                 </label>
                 <a href="#" id="link-esqueci-senha">Esqueci senha</a>
             </div>
             <a href="#">
-                <button type="button" class="login" id="botao-entrar">Entrar</button>
+                <button type="submit" class="login" id="botao-entrar">Entrar</button>
             </a>
             <div class="registrar" id="registrar-container">
-                <p id="texto-registro">Não tem uma conta? <a href="formulario.html" id="link-registro">Registra-se</a></p>
+                <p id="texto-registro">Não tem uma conta? <a href="pag_registe.html" id="link-registro">Registra-se</a></p>
             </div>
         </form>
     </main>
+    <script src="javascript/login.js" defer></script>
 </body>
 </html>

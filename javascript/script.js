@@ -49,6 +49,16 @@ window.addEventListener('DOMContentLoaded', function () {
       const email = document.getElementById('email').value.trim();
       const telefone = document.getElementById('telefone').value.trim();
       const endereco = document.getElementById('endereco').value.trim();
+
+      //Armazenamento dos valores
+      const nomeStorage = localStorage.setItem("nome", nome);
+      const dataNascimentoStorage = localStorage.setItem("dataNascimento", dataNascimento);
+      const sexoStorage = localStorage.setItem("sexo", sexo);
+      const emailStorage = localStorage.setItem("email", email);
+      const telefoneStorage = localStorage.setItem("telefone", telefone);
+      const enderecoStorage = localStorage.setItem("endereco", endereco);
+
+
       const trilhaSelecionada = document.querySelector('input[name="opcao"]:checked');
       const termosAceitos = document.querySelector('.termos input[type="checkbox"]').checked;
 
