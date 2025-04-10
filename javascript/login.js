@@ -12,15 +12,10 @@ formularioLogin.addEventListener("submit", (e) => {
         alert("Login bem-sucedido! ✅");
         window.location.href = "formulario.html";
     } 
-    if(senhaDigitada != senhaArmazenada) {
-        alert("Senha incorreta! ❌");
+    if(senhaDigitada != senhaArmazenada || usuarioArmazenado != usuario ) {
+        alert("Usuário e/ou Senha incorreto! ❌");
         mensagemSenha.style.display = 'block';
     } 
-    if(usuarioArmazenado != usuario) {
-        alert("Usuario incorreta! ❌");
-        mensagemSenha.style.display = 'block';
-    }
-    
-    
+
     document.getElementById('campo-senha').value = "";
 });
