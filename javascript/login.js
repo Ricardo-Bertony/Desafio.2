@@ -13,7 +13,7 @@ formularioLogin.addEventListener("submit", (e) => {
         window.location.href = "formulario.html";
     } 
     if(senhaDigitada != senhaArmazenada || usuarioArmazenado != usuario ) {
-        alert("Usuário e/ou Senha incorreto! ❌");
+        alert("Usuário e/ou Senha incorreto(s)! ❌");
         mensagemSenha.style.display = 'block';
     } 
 
