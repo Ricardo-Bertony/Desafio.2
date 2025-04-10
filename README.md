@@ -1,5 +1,6 @@
 # Desafio 3
 📝 Formulário de Inscrição - Programa Trilhas
+
 Este projeto é uma aplicação web moderna e 100% responsiva, que simula um formulário de inscrição com foco em validação de dados no front-end, utilizando HTML, CSS e JavaScript.
 
 🚀 Funcionalidades
@@ -7,6 +8,10 @@ Este projeto é uma aplicação web moderna e 100% responsiva, que simula um for
 ✅ Página de Login
 
 Interface de entrada com campos de autenticação simulada.
+
+Validação do campos informados
+
+Armazenamento Local (LocalStorage)
 
 Design responsivo e adaptável a diferentes telas.
 
@@ -18,9 +23,13 @@ Nome completo
 
 Data de nascimento
 
+CPF
+
 Gênero
 
 E-mail
+
+Senha
 
 Telefone (com máscara automática: (99) 99999-9999)
 
